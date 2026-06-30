@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    "Pretendard",
+    -apple-system,
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+  background: #0f1117;
+
+  color: #e5e7eb;
+
+  line-height: 1.7;
+}
+
+/* ---------- Header ---------- */
+
+header {
+  padding: 56px 20px 14px;
+
+  text-align: center;
+}
+
+.eyebrow {
+  color: #5eead4;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 10px;
+}
+
+/* ---------- Layout ---------- */
+
+.container {
+  width: 1360px;
+
+  max-width: 92%;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 26px;
+
+  margin-bottom: 90px;
+}
+
+.card {
+  background: #181b25;
+
+  border: 1px solid #262a38;
+
+  border-radius: 18px;
+
+  padding: 38px;
+
+  transition: 0.25s;
+}
+
+.card:hover {
+  border-color: #5eead4;
+
+  transform: translateY(-4px);
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  grid-column: 1 / -1;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 50px;
+
+  text-align: left;
+
+  background: linear-gradient(180deg, #1a1f2e 0%, #181b25 100%);
+
+  padding: 48px 50px;
+}
+
+.hero-meta {
+  color: #9ca3af;
+  font-size: 14.5px;
+  margin-bottom: 18px;
+}
+
+.hero img {
+  width: 175px;
+
+  height: 175px;
+
+  flex-shrink: 0;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  border: 3px solid #5eead4;
+
+  box-shadow: 0 0 40px rgba(94, 234, 212, 0.28);
+}
+
+.hero-text h2 {
+  font-size: 28px;
+
+  color: #f9fafb;
+
+  margin-bottom: 4px;
+}
+
+.role {
+  color: #5eead4;
+
+  font-weight: 700;
+
+  font-size: 21px;
+
+  margin-bottom: 22px;
+}
+
+.hero-body {
+  max-width: 910px;
+}
+
+.hero-paragraph {
+  font-size: 16px;
+
+  color: #aab1bd;
+
+  margin-bottom: 10px;
+
+  line-height: 1.7;
+}
+
+.hero-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------- Section headers ---------- */
+
+h3 {
+  font-size: 14px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+
+  color: #5eead4;
+
+  margin-bottom: 24px;
+
+  padding-left: 14px;
+
+  border-left: 3px solid #5eead4;
+}
+
+/* ---------- Skills ---------- */
+
+.skills {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+}
+
+.skills span {
+  background: #1f2433;
+
+  border: 1px solid #2d3344;
+
+  color: #c4b5fd;
+
+  padding: 9px 18px;
+
+  border-radius: 999px;
+
+  font-size: 15px;
+}
+
+/* ---------- Projects ---------- */
+
+.projects {
+  grid-column: 1 / -1;
+}
+
+.project-list {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+.project-item {
+  background: #11141d;
+
+  border: 1px solid #262a38;
+
+  border-radius: 14px;
+
+  padding: 28px;
+}
+
+.project-item h4 {
+  color: #f9fafb;
+
+  font-size: 19px;
+
+  margin-bottom: 14px;
+}
+
+.project-item p {
+  color: #aab1bd;
+
+  font-size: 15.5px;
+
+  margin-bottom: 16px;
+
+  line-height: 1.7;
+}
+
+.project-item .tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+}
+
+.project-item .tags span {
+  background: #1a1f2e;
+
+  color: #5eead4;
+
+  font-size: 13px;
+
+  padding: 6px 12px;
+
+  border-radius: 999px;
+}
+
+/* ---------- Contact ---------- */
+
+.contact-row {
+  display: flex;
+
+  align-items: baseline;
+
+  gap: 14px;
+
+  margin-bottom: 14px;
+}
+
+.contact-row:last-child {
+  margin-bottom: 0;
+}
+
+.contact-row .label {
+  width: 70px;
+
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+.contact a {
+  text-decoration: none;
+
+  color: #5eead4;
+
+  font-size: 16px;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+  text-align: center;
+
+  padding: 34px;
+
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 36px 28px;
+  }
+
+  .hero-body {
+    max-width: 100%;
+  }
+
+  .hero-headline,
+  .hero-paragraph {
+    text-align: left;
+  }
+}
